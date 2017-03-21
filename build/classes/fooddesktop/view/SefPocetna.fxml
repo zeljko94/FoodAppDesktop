@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="659.0" styleClass="background" stylesheets="@admin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fooddesktop.controller.SefPocetnaController">
+   <children>
+      <GridPane alignment="CENTER" hgap="10.0" layoutY="2.0" prefHeight="478.0" prefWidth="581.0" styleClass="pozadina" stylesheets="@foodApp.css" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="192.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="190.0" />
+         </columnConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints maxHeight="311.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="311.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="147.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="147.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="311.0" minHeight="10.0" prefHeight="163.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button id="vozila" mnemonicParsing="false" prefHeight="145.0" prefWidth="193.0" stylesheets="@admin.css" text="Dnevni izvještaji" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Button id="termini" mnemonicParsing="false" prefHeight="145.0" prefWidth="193.0" text="Dnevni troškovi" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <Button id="klijenti" mnemonicParsing="false" prefHeight="145.0" prefWidth="193.0" text="Dnevni pazari" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#otvoriLogin" prefHeight="48.0" prefWidth="386.0" text="Odjava" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button id="termini" mnemonicParsing="false" prefHeight="145.0" prefWidth="193.0" text="Neto zarada" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="243.0" text="Pregled poslovanja" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@Capture.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
